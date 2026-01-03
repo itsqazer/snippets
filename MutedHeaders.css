@@ -1,0 +1,21 @@
+/* @itsqazer */
+
+.is-live-preview .cm-header::before {
+  display: inline;
+  color: color-mix(in srgb, white 25%, var(--background-primary) );
+}
+
+.is-live-preview .cm-line .cm-header-1::before { content: "# "; }
+.is-live-preview .cm-line .cm-header-2::before { content: "## "; }
+.is-live-preview .cm-line .cm-header-3::before { content: "### "; }
+.is-live-preview .cm-line .cm-header-4::before { content: "#### "; }
+.is-live-preview .cm-line .cm-header-5::before { content: "##### "; }
+.is-live-preview .cm-line .cm-header-6::before { content: "###### "; }
+
+.is-live-preview .cm-line:has(.cm-formatting-header) .cm-header::before {
+  display: none;
+}
+
+.is-live-preview .cm-header ~ .cm-header::before {
+  display: none;
+}
